@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: white;
+  padding-bottom: 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 0.95rem;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 18px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.button.disabled {
+  background: #94a3b8;
+  pointer-events: none;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.team-member {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.team-member a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: #475569;
+}
