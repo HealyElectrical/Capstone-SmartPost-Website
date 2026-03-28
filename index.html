@@ -8,25 +8,25 @@
 </head>
 <body>
   <header class="hero">
-    <nav class="nav">
-      <div class="logo">SmartPost</div>
-      <div class="nav-links">
-        <a href="#webserver">Webserver</a>
-        <a href="#team">Team</a>
-        <a href="#abstract">Abstract</a>
-        <a href="#methods">Methods</a>
-        <a href="#results">Results</a>
-        <a href="#future">Conclusion & Future Research</a>
-      </div>
-    </nav>
-
-    <div class="hero-content">
-      <h1>SmartPost Capstone Project</h1>
-      <p>
-        A secure and remotely accessible smart package receiver system.
-      </p>
+  <nav class="nav">
+    <div class="logo">SmartPost</div>
+    <div class="nav-links">
+      <a href="#webserver">Webserver</a>
+      <a href="#team">Team</a>
+      <a href="#abstract">Abstract</a>
+      <a href="#methods">Methods</a>
+      <a href="#results">Results</a>
+      <a href="#future">Conclusion & Future Research</a>
     </div>
-  </header>
+  </nav>
+
+  <div class="hero-content">
+    <img src="images/smartpost-banner.png" alt="SmartPost and BCIT banner" class="hero-banner">
+    <p class="hero-subtitle">
+      A secure and remotely accessible smart package receiver system.
+    </p>
+  </div>
+</header>
 
   <main class="container">
     <section id="webserver" class="card">
@@ -37,46 +37,93 @@
       <a class="button disabled" href="#">Webserver Link Coming Soon</a>
     </section>
 
-    <section id="team" class="card">
-      <h2>Our Team</h2>
-      <div class="team-grid">
-        <div class="team-member">
-          <h3>Glen Healy</h3>
-          <p>Electrical Engineering Student</p>
-          <a href="https://www.glenhealy.com" target="_blank" rel="noopener noreferrer">
-            Personal Website
-          </a>
-        </div>
+<section id="team" class="card">
+  <h2>Our Team</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <a href="https://www.glenhealy.com" target="_blank" rel="noopener noreferrer">
+        <img src="Glen_Healy_Profile.jpeg" alt="Photo of Glen Healy" class="team-photo">
+      </a>
+      <h3>Glen Healy</h3>
+      <p>Electrical Engineering Student</p>
+      <a href="https://www.glenhealy.com" target="_blank" rel="noopener noreferrer">
+        Personal Website
+      </a>
+    </div>
 
-        <div class="team-member">
-          <h3>Teammate 2</h3>
-          <p>Role / Short Bio</p>
-          <a href="#">Website Coming Soon</a>
-        </div>
+    <div class="team-member">
+      <a href="https://www.linkedin.com/in/p-ban/" target="_blank" rel="noopener noreferrer">
+        <img src="Pawel.webp" alt="Photo of Pawel Banasik" class="team-photo">
+      </a>
+      <h3>Pawel Banasik</h3>
+      <p>Electrical Engineering Student</p>
+      <a href="https://www.linkedin.com/in/p-ban/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+    </div>
 
-        <div class="team-member">
-          <h3>Teammate 3</h3>
-          <p>Role / Short Bio</p>
-          <a href="#">Website Coming Soon</a>
-        </div>
-      </div>
-    </section>
+    <div class="team-member">
+      <a href="https://www.linkedin.com/in/mikhail-rego-858030127" target="_blank" rel="noopener noreferrer">
+        <img src="Mikhail.jpg" alt="Photo of Mikhail Rego" class="team-photo">
+      </a>
+      <h3>Mikhail Rego</h3>
+      <p>Electrical Engineering Student</p>
+      <a href="https://www.linkedin.com/in/mikhail-rego-858030127" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+    </div>
+
+    <div class="team-member">
+  <a href="https://www.linkedin.com/in/ethan-bosiak-7425762b8" target="_blank" rel="noopener noreferrer">
+    <img src="Ethan.webp" alt="Photo of Ethan Bosiak" class="team-photo">
+  </a>
+  <h3>Ethan Bosiak</h3>
+  <p>Electrical Engineering Student</p>
+  <a href="https://www.linkedin.com/in/ethan-bosiak-7425762b8" target="_blank" rel="noopener noreferrer">
+    LinkedIn
+  </a>
+  <br>
+  <a href="files/ResumeEthanBosiak.pdf" target="_blank" rel="noopener noreferrer">
+    Resume
+  </a>
+</div>
+  </div>
+</section>
 
     <section id="abstract" class="card">
       <h2>Abstract</h2>
       <p>
-        Add your abstract here. This section should summarize the project,
-        the problem being solved, your design approach, and the overall result.
+       SmartPost is a scalable and modular IoT-enabled secure package receiver designed as a plug-and-play consumer product for modern parcel delivery. The purpose of this project was to explore the development of a secure, remotely accessible package reception system with commercial potential. The system integrates three cameras for visual monitoring, a strain gauge for package weight detection, a linear actuator for door movement, and a solenoid lock for controlled access. A Raspberry Pi 4 serves as the primary embedded controller, while a second Raspberry Pi 4 hosts the server and enables remote communication over a wide area network through tunneling. To improve redundancy and system reliability, a Raspberry Pi Pico 2 is incorporated to support critical functions independently of the main controller. The software architecture includes both front-end and back-end development for remote monitoring and control, with support for multiple users and multiple devices to reflect a scalable consumer deployment model. The project also required custom 3D mechanical design for the enclosure and locking mechanisms, as well as PCB design for subsystem integration, packaging, and power distribution. A dedicated power supply PCB with buck converters was designed to operate the full system from a single transformer. Component testing and subsystem integration are being completed to validate functionality and demonstrate the feasibility of SmartPost as a user-friendly, scalable, and commercially relevant smart package delivery solution.
       </p>
     </section>
 
     <section id="methods" class="card">
-      <h2>Methods</h2>
-      <p>
-        Describe how the system was designed and built. You can discuss the
-        hardware, software architecture, networking, embedded control, and web interface.
-      </p>
-    </section>
+  <h2>Methods</h2>
+  <p>
+    SmartPost was developed using a modular systems engineering approach that integrated mechanical design, embedded control, sensing, networking, and web application development. The prototype enclosure was designed to function as a secure package receiver and incorporated a locking mechanism, package detection hardware, and multiple cameras for visual monitoring. A Raspberry Pi 4 served as the main processing unit, coordinating sensor inputs, camera operation, actuator control, and communication with the remote user interface.
+  </p>
+  <p>
+    The software system was structured as a set of interconnected modules to separate core functions such as authentication, device communication, media handling, and user interaction. A web-based dashboard was developed to provide remote access to system status and controls. This architecture supported staged development, allowing each subsystem to be implemented and tested independently before full system integration. Mechanical and electrical subsystems were also designed with modularity in mind to simplify assembly, troubleshooting, and future upgrades.
+  </p>
+  <p>
+    Testing was performed in two stages: component-level verification and integrated system evaluation. Sensors, cameras, and access-control hardware were first tested individually to confirm expected behavior. After subsystem verification, the full prototype was assembled and tested under representative operating conditions to evaluate responsiveness, reliability, and usability. This method allowed the team to validate both the technical feasibility of the design and its potential as a scalable consumer product.
+  </p>
+</section>
+
+<section id="ethics" class="card">
+  <h2>Ethics of Surveillance Case Study</h2>
+  <p>
+    This paper explores the ethical implications of surveillance in secure
+    package-receiver systems, including privacy, consent, and responsible design.
+  </p>
+
+  <object data="files/ethics-surveillance-case-study.pdf" type="application/pdf" width="100%" height="700">
+    <p>
+      Your browser could not display the PDF.
+      <a href="files/ethics-surveillance-case-study.pdf" target="_blank" rel="noopener noreferrer">Open the PDF here</a>.
+    </p>
+  </object>
+</section>
 
     <section id="results" class="card">
       <h2>Results</h2>
@@ -87,13 +134,17 @@
     </section>
 
     <section id="future" class="card">
-      <h2>Conclusion and Future Research</h2>
-      <p>
-        Summarize what the capstone achieved and explain the next steps,
-        such as improving reliability, scaling users, adding mobile support,
-        or refining security and automation.
-      </p>
-    </section>
+  <h2>Conclusion and Future Research</h2>
+  <p>
+    The SmartPost capstone project demonstrated the feasibility of a secure, remotely accessible package receiver designed for modern parcel delivery. By integrating sensing, camera monitoring, mechanical access control, embedded processing, and a web-based interface, the project successfully brought together multiple engineering disciplines into a single functional prototype. The final system showed that secure package reception can be made more convenient, observable, and scalable through a modular design approach.
+  </p>
+  <p>
+    In addition to validating the technical concept, the project also established a strong foundation for future development as a consumer-ready product. The use of modular hardware and software architecture improved maintainability, simplified subsystem testing, and created flexibility for future feature expansion. This made the prototype valuable not only as a proof of concept, but also as an early-stage platform for continued refinement.
+  </p>
+  <p>
+    Future research and development could focus on improving long-term reliability, strengthening security, and expanding usability. Potential next steps include refining the enclosure and locking hardware, improving environmental durability for outdoor deployment, adding support for multiple users and delivery workflows, developing a dedicated mobile application, and enhancing automation through smarter event detection and notification systems. Additional work could also explore product miniaturization, manufacturing optimization, and broader integration with connected home ecosystems. These improvements would help move SmartPost closer to becoming a practical and commercially scalable smart delivery solution.
+  </p>
+</section>
   </main>
 
   <footer class="footer">
