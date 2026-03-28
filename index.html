@@ -126,21 +126,39 @@
 </section>
 
     <section id="results" class="card">
-      <h2>Results</h2>
-      <p>
-        Add the main outcomes here. You can later include test results,
-        photos, screenshots, charts, or performance observations.
-      </p>
-    </section>
+  <h2>Results</h2>
+  <p>
+    Initial development and integration of the SmartPost prototype demonstrated that the core system architecture is functional and capable of supporting secure, remotely accessible package reception. Key subsystems, including sensing, camera monitoring, embedded control, and web-based interaction, were successfully brought together into a working prototype. These results support the feasibility of the overall design and show that the project can operate as an integrated system rather than only as isolated components.
+  </p>
+  <p>
+    At the current stage of development, formal performance validation is still in progress. The team has established a structured set of hardware and software tests to evaluate reliability, responsiveness, and system behavior under representative conditions. An engineering test spreadsheet is being used to organize and track planned validation activities, while software tests defined within the project GitHub repository provide a foundation for verifying important parts of the codebase and supporting maintainability.
+  </p>
+  <p>
+    Although testing is not yet fully complete, the results obtained so far indicate that the SmartPost concept is technically viable and that the system architecture is suitable for further refinement. Ongoing testing will be used to better quantify system performance, confirm reliability, and identify areas for improvement as the project moves toward a more polished and fully validated prototype.
+  </p>
+</section>
 
     <section id="future" class="card">
   <h2>Conclusion and Future Research</h2>
   <p>
-    The SmartPost capstone project demonstrated the feasibility of a secure, remotely accessible package receiver designed for modern parcel delivery. By integrating sensing, camera monitoring, mechanical access control, embedded processing, and a web-based interface, the project successfully brought together multiple engineering disciplines into a single functional prototype. The final system showed that secure package reception can be made more convenient, observable, and scalable through a modular design approach.
+    The SmartPost capstone project demonstrated the feasibility of a secure, remotely accessible package receiver designed for modern parcel delivery. By integrating sensing, camera monitoring, mechanical access control, embedded processing, and a web-based interface, the project brought together multiple engineering disciplines into a single functional prototype. The system showed that secure package reception can be made more convenient, observable, and scalable through a modular design approach.
   </p>
+
   <p>
-    In addition to validating the technical concept, the project also established a strong foundation for future development as a consumer-ready product. The use of modular hardware and software architecture improved maintainability, simplified subsystem testing, and created flexibility for future feature expansion. This made the prototype valuable not only as a proof of concept, but also as an early-stage platform for continued refinement.
+    In addition to validating the overall technical concept, the project established a strong foundation for future development as a more robust and product-ready system. As part of this effort, the team developed multiple custom printed circuit boards to improve wiring organization, reduce system complexity, and increase overall reliability. These PCB designs help move the prototype away from temporary wiring and toward a cleaner, more maintainable, and more durable implementation.
   </p>
+
+  <figure class="project-figure">
+    <img src="images/PowerSupply_BuckConverter.png" alt="PCB power supply buck converter design for SmartPost" class="section-image">
+    <figcaption>
+      Custom PCB design incorporating buck conversion for regulated system power distribution.
+    </figcaption>
+  </figure>
+
+  <p>
+    A dedicated buck converter power supply was also developed so that 5 V and 3.3 V electronics could be powered efficiently from the system's 12 V supply. This improves power integration across the prototype and supports the reliable operation of embedded controllers, sensors, and supporting electronics. Together, these electrical design improvements strengthen the practicality of the system and support future refinement into a more polished engineering product.
+  </p>
+
   <p>
     Future research and development could focus on improving long-term reliability, strengthening security, and expanding usability. Potential next steps include refining the enclosure and locking hardware, improving environmental durability for outdoor deployment, adding support for multiple users and delivery workflows, developing a dedicated mobile application, and enhancing automation through smarter event detection and notification systems. Additional work could also explore product miniaturization, manufacturing optimization, and broader integration with connected home ecosystems. These improvements would help move SmartPost closer to becoming a practical and commercially scalable smart delivery solution.
   </p>

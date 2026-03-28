@@ -152,3 +152,24 @@ body {
   padding: 24px;
   color: #475569;
 }
+
+.section-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.project-figure {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.project-figure figcaption {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-top: 8px;
+}
